@@ -26,11 +26,12 @@ public class LardeurTest {
 	@Test
 	public void lardeurStuff() throws InterruptedException, FileNotFoundException {
 		if (BROWSER.equals("Firefox")) {
-			WebDriver driver = new FirefoxDriver();
+		 driver = new FirefoxDriver();
 		} else if (BROWSER.equals("Chrome")) {
-			WebDriver driver = new ChromeDriver();
+			driver = new ChromeDriver();
 		} else {
-			WebDriver driver = new InternetExplorerDriver();
+			driver = new InternetExplorerDriver();
+		}
 			PageAccueil pageAccueil = PageFactory.initElements(driver, PageAccueil.class);
 			PageRecherchePNJ pageRecherchePNJ = pageAccueil.rechercheLardeur(driver, Mob);
 			PagePNJ pagePNJ = pageRecherchePNJ.resultatLardeur(driver);
@@ -39,4 +40,4 @@ public class LardeurTest {
 			driver.navigate().back();
 		}
 	}
-}
+
