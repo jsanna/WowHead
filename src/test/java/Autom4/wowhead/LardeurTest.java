@@ -19,6 +19,7 @@ public class LardeurTest {
 	String Item5 = "Espauliers";
 	
 	String File1 = "Item1";
+	
 	@Test
 	public void lardeurStuff() throws InterruptedException, FileNotFoundException {
 PageAccueil pageAccueil = PageFactory.initElements(driver, PageAccueil.class);
