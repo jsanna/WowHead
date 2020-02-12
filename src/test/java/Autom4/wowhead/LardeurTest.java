@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LardeurTest {
 	private String BROWSER=System.getProperty("browser");
-	
+	private WebDriver driver;
 	String Mob = "Lardeur";
 	String Item1 = "Chahuteur";
 	String Item2 = "Chausses";
