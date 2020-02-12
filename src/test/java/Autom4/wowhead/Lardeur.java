@@ -25,7 +25,7 @@ PageAccueil pageAccueil = PageFactory.initElements(driver, PageAccueil.class);
 PageRecherchePNJ pageRecherchePNJ = pageAccueil.rechercheLardeur(driver, Mob);
 PagePNJ pagePNJ = pageRecherchePNJ.resultatLardeur(driver);
 PageItemLoot pageItemLoot = pagePNJ.premierItem(driver, Item1);
-pageItemLoot.loadFile(File1);
+//pageItemLoot.loadFile(File1);
 driver.navigate().back();
 	}
 	
